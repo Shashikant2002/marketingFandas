@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- google font rajdhani -->
@@ -75,8 +78,8 @@
             <div class="banner-content-main flex justfy-between align-items-center">
 
                 <div class="youtube-vid">
-                    <iframe width="100%" src="https://www.youtube.com/embed/QTQCRZU_GCo"
-                        title="YouTube video player" frameborder="0"
+                    <iframe width="100%" src="https://www.youtube.com/embed/QTQCRZU_GCo" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
 
@@ -392,8 +395,8 @@
 
             <div class="FAQ-data-mian flex justfy-center ">
                 <div class="faq">
-                    <h4>Is this a Live Online Course?</h4>
-                    <p>This is a 100% Live and Online Course. You do not need to travel
+                    <h4 class="rotateArrow">Is this a Live Online Course?</h4>
+                    <p style="display: block;">This is a 100% Live and Online Course. You do not need to travel
                         anywhere to attend classes.</p>
                 </div>
                 <div class="faq">
@@ -478,13 +481,11 @@
         $(document).ready(function () {
             // Question handler
             $('.FAQ-main .faq h4').on("click", function () {
-                // Get next element
-                $('.FAQ-main .faq p').hide(200)
+                $(this)[0].classList.toggle('rotateArrow')
                 $(this).next()
                     .slideToggle(200)
-                    // Select all other answers
-                    .siblings('.FAQ-main .faq')
-                    .slideUp();
+                    .siblings('.FAQ-main .faq p')
+                    .slideUp()
             });
         });
 
