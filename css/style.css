@@ -1,0 +1,653 @@
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+
+:root {
+  --primary-color: #68509d;
+  --secondry-color: #ab3769;
+  --paragraph-color: #7d7d7e;
+  --span-color: #983e78;
+  --button-font-size: 35px;
+  --span-color: #983e78;
+}
+
+span {
+  color: var(--span-color);
+  display: inline-block;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #7d7d7e;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 57px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffff;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary-btn a {
+  padding: 10px 45px;
+  background: linear-gradient(rgba(103, 80, 158, 1), rgba(167, 56, 108, 1));
+  color: #ffffff;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justfy-center {
+  justify-content: center;
+}
+
+.justfy-between {
+  justify-content: space-between;
+}
+
+.justfy-around {
+  justify-content: space-around;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* global end */
+
+/* header section start */
+
+.main-header {
+  border-bottom: 1px solid #e8f2fd;
+}
+
+.main-header .top-header {
+  background-color: #993368;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.main-header .down-header {
+  padding: 10px 0px;
+}
+
+.main-header .down-header .contact i {
+  color: var(--span-color);
+  font-size: 28px;
+}
+
+.main-header .down-header .contact strong {
+  color: black;
+  font-size: 27px;
+  padding-left: 10px;
+}
+
+/* hero section start */
+
+.banner-sec-main {
+  background-image: url(../images/hero-bg-shape.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.banner-sec-main .banner-content-main {
+  padding: 70px 0px;
+  width: 100%;
+}
+
+.banner-sec-main .youtube-vid iframe{
+    height: 340px !important;
+}
+.banner-sec-main .youtube-vid {
+  width: 60%;
+  /* border: 10px solid #eff5fd; */
+}
+
+.banner-sec-main iframe {
+  /* border: 10px solid #f8fbff; */
+  border-radius: 10px;
+}
+
+.banner-sec-main .banner-text {
+  margin-left: 40px;
+  width: 50%;
+}
+
+.banner-sec-main .banner-text h1 {
+  line-height: 1.05;
+}
+
+.banner-sec-main .banner-text p {
+  margin: 15px 0px 30px 0px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.banner-sec-main .primary-btn a {
+  /* margin-top: 20px; */
+  padding: 10px 45px;
+  background: linear-gradient(rgba(103, 80, 158, 1), rgba(167, 56, 108, 1));
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+/* hero-section end */
+
+/* special section start */
+
+.special-offer-main {
+  background-image: url(../images/special-sec-bg.png);
+  padding-bottom: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.special-offer-main .earn-main {
+  padding: 70px 0px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.special-offer-main .earn-main p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  color: #585858;
+  padding-top: 10px;
+}
+
+.special-offer-main .offer-form-main {
+  /* text-align: left; */
+  width: 100%;
+}
+
+.special-offer-main .offfer-content {
+  width: 60%;
+}
+
+.special-offer-main .offfer-content .spec-hdng {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 58px;
+  color: #171717;
+  font-weight: 600;
+}
+
+.special-offer-main .offfer-content .enroll {
+  font-family: "Rajdhani";
+  font-size: 27px;
+  font-weight: 400;
+  color: #3d8dae;
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.special-offer-main .offer-form-main .form {
+  width: 40%;
+  background: linear-gradient(rgba(133, 51, 105, 1), rgba(167, 56, 108, 1));
+  border-radius: 20px;
+  padding: 35px 30px;
+}
+
+.special-offer-main .offer-form-main .courses-bundles-main span {
+  font-size: 60px;
+  font-weight: bold;
+  color: #3d8dae;
+}
+
+.special-offer-main .courses-bundles-main p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+  color: #585858;
+}
+
+.special-offer-main .form span {
+  display: inline-block;
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.special-offer-main .form .inputs input {
+  padding: 15px 0px 15px 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #c9c9c9;
+  border: none;
+}
+
+.special-offer-main .form .input-textarea textarea {
+  resize: none;
+  width: 100%;
+  padding: 20px 0px 0px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.special-offer-main .form .input-textarea textarea::placeholder {
+  margin-top: 10px;
+}
+
+.special-offer-main .submit-btn {
+  text-align: center;
+}
+
+.special-offer-main .form .submit-btn button {
+  font-family: "Rajdhani", sans-serif;
+  padding: 13px 90px;
+  background: #853369;
+  color: #ffffff;
+  font-size: 28px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+
+.special-offer-main .offfer-content .mainOffer {
+  width: 100%;
+  max-width: 590px;
+  /* border: 1px solid red; */
+  background-image: url(../images/speceal-offer-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 95px 64px 50px;
+  text-align: center;
+}
+.special-offer-main .offfer-content {
+  padding-right: 30px;
+  position: relative;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: end;
+}
+.special-offer-main .circle-img {
+  position: absolute;
+  left: 0px;
+  /* border: 1px solid red; */
+  bottom: 50px;
+  width: 170px;
+}
+
+/* special section end */
+
+/* followers section start  */
+
+.followers-sec-main {
+  padding: 70px 0px;
+}
+
+.followers-sec-main .millions-row-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+}
+
+.followers-sec-main .millions-row-main .millions-col1 {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #fef7f9;
+  padding: 35px 133px;
+  color: #bd3e63;
+  border-radius: 10px;
+}
+
+.followers-sec-main .millions-row-main .millions-col2 {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #f8fbff;
+  padding: 35px 133px;
+  color: #5581bb;
+  border-radius: 10px;
+}
+
+.followers-sec-main .millions-row-main .millions-col3 {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #fef7f9;
+  padding: 35px 133px;
+  color: #bd3e63;
+  border-radius: 10px;
+}
+
+.followers-sec-main .millions-row-main .millions-col4 {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #f8fbff;
+  padding: 35px 133px;
+  color: #5581bb;
+  border-radius: 10px;
+}
+
+.followers-sec-main .millions-row-main .millions-col5 {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #fef7f9;
+  padding: 35px 133px;
+  color: #bd3e63;
+  border-radius: 10px;
+}
+
+.followers-sec-main .millions-row-main .millions-col6 {
+  font-family: "Rajdhani", sans-serif;
+  background-color: #f8fbff;
+  padding: 35px 133px;
+  color: #5581bb;
+  border-radius: 10px;
+}
+
+.followers-sec-main .millions-row-main .millions-col1 p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+}
+
+.followers-sec-main .millions-row-main .millions-col2 p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+}
+
+.followers-sec-main .millions-row-main .millions-col3 p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+}
+
+.followers-sec-main .millions-row-main .millions-col4 p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+}
+
+.followers-sec-main .millions-row-main .millions-col5 p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+}
+
+.followers-sec-main .millions-row-main .millions-col6 p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+}
+
+/* followers section End  */
+
+/* contact cta start */
+
+.contact-cta-main .contact-cta {
+  background-image: url(../images/contact-img.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-cta .cta-data {
+  padding: 70px 0;
+  color: #ffff;
+}
+
+.contact-cta .cta-data h3 {
+  font-weight: 600;
+}
+
+.contact-cta .cta-data a {
+  color: #000;
+  font-size: 26px;
+  padding: 12px 40px;
+  background-color: #ffff;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+/* contact cta end */
+
+/* Testimonial Start */
+
+.testimonial-main {
+  padding: 70px 0;
+}
+
+.testimonial-main .owl-nav,
+.testimonial-main .owl-dots {
+  display: none;
+}
+.testimonial .testimonial1 {
+  width: 350px;
+  margin-top: 40px;
+}
+
+.testimonial-main .testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-main h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.testimonial .testimonial1 .testimonial-text {
+  background: aliceblue;
+  /* background-image: url(/images/testimonia-lbg.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+.testimonial .testimonial1 .testimonial-text p {
+  font-size: 15px;
+}
+
+.testimonial .testimonial1 .testimonial-text-img {
+  margin-top: 40px;
+  align-items: center;
+}
+
+.testimonial .testimonial1 .testimonial-text-img .testimonial-image img {
+  border-radius: 50%;
+}
+
+.testimonial .testimonial1 .testimonial-text2 {
+  margin-left: 20px;
+}
+
+.testimonial .testimonial1 .testimonial-text2 span {
+  font-size: 22px;
+}
+
+/* Testimonial end */
+
+/* FAQ sec start */
+
+.FAQ-main {
+  background-color: #f8fbff;
+  padding: 70px 0px;
+}
+
+.FAQ-main h3 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.FAQ-data-mian {
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.FAQ-main .FAQ-data-mian .faq {
+  width: 45%;
+}
+.FAQ-main .FAQ-data-mian h4 {
+  background-color: #fff;
+  font-weight: 400;
+  color: #171717;
+  width: 100%;
+  max-width: 558px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.FAQ-main .FAQ-data-mian p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7d7d7e;
+  width: 100%;
+  max-width: 558px;
+  padding: 0px 15px;
+  line-height: 1.5;
+  display: none;
+}
+
+/* FAQ sec end */
+
+/* footer start */
+
+.footer-main .footer-contact-cta {
+  background-image: url("../images/contact-img.png");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-main .footer-cta-data {
+  padding: 70px 0;
+  color: #ffff;
+}
+
+.footer-main .footer-contact-cta h3 {
+  font-weight: 600;
+}
+
+.footer-main .footer-cta-data a {
+  color: #000;
+  font-size: 26px;
+  padding: 12px 40px;
+  background-color: #ffff;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.footer-bottom-area {
+  background-color: #993368;
+  text-align: center;
+}
+
+.footer-bottom-area p {
+  font-family: "Rajdhani", sans-serif;
+  padding: 10px 0px;
+  color: #fff;
+  font-weight: 400;
+}
+.banner-sec-main .youtube-vid iframe{
+    height: 100px;
+}
+
+/* footer end */
+
+@media (max-width: 1025px) {
+  .special-offer-main .circle-img {
+    width: 125px;
+  }
+  .special-offer-main .offer-form-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .special-offer-main .offfer-content {
+    width: 100%;
+    max-width: 600px;
+    padding-right: 0;
+  }
+  .special-offer-main .offer-form-main .form{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+  }
+  .banner-sec-main .banner-content-main{
+    flex-direction: column;
+  }
+  .banner-sec-main .youtube-vid,
+  .banner-sec-main .banner-text{
+    margin-left: 0;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .FAQ-main .FAQ-data-mian .faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .followers-sec-main .millions-row-main >div{
+    width: 45%;
+    padding: 0;
+    padding: 30px 10px !important;
+  }
+}
+@media (max-width: 550px) {
+    .special-offer-main .offfer-content .mainOffer{
+        background-position: bottom;
+        padding: 0px 50px;
+        padding-bottom: 30px;
+    }
+    .special-offer-main .circle-img{
+        position: initial;
+    }
+    .banner-sec-main .youtube-vid iframe{
+        height: 240px !important;
+    }
+}
+@media (max-width: 426px) {
+  .followers-sec-main .millions-row-main >div{
+    width: 100%;
+    padding: 0;
+    padding: 30px 10px !important;
+  }
+}
