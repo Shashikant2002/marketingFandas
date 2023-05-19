@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- Aos itint -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- google font rajdhani -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,7 +92,7 @@
                         Marketing Course After Which Any one Can Create A
                         Million Dollar Campaign.</p>
 
-                    <div class="primary-btn">
+                    <div class="primary-btn" data-aos="zoom-in">
                         <a href="#">APPLY NOW</a>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
 
         <div class="container">
             <div class="earn-main flex justfy-around">
-                <div class="icon-join1">
+                <div class="icon-join1" data-aos="zoom-in">
                     <img src="./images/join.png" alt="icon1">
                     <P>Join</P>
                 </div>
@@ -123,7 +123,7 @@
                     <p>Recommend</p>
                 </div>
 
-                <div class="icon-earn3">
+                <div class="icon-earn3" data-aos="zoom-in">
                     <img src="./images/earn.png" alt="icon3">
                     <p>Earn</p>
                 </div>
@@ -133,7 +133,7 @@
 
                 <div class="offfer-content">
                     <div class="mainOffer">
-                        <img src="./images/special-sec-img.png" alt="" class="circle-img">
+                        <img data-aos="zoom-in" src="./images/special-sec-img.png" alt="" class="circle-img">
                         <span class="spec-hdng">Special Offer</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been
@@ -201,7 +201,7 @@
 
             <div class="millions-row-main">
 
-                <div class="millions-col1">
+                <div class="millions-col1" data-aos="fade-up">
                     <img src="./images/followers.png" alt="images">
                     <h3>1M</h3>
                     <p>FOLLOWERS</p>
@@ -213,7 +213,7 @@
                     <p>FOLLOWERS</p>
                 </div>
 
-                <div class="millions-col3">
+                <div class="millions-col3" data-aos="fade-up">
                     <img src="./images/followers.png" alt="images">
                     <h3>1M</h3>
                     <p>FOLLOWERS</p>
@@ -225,7 +225,7 @@
                     <p>FOLLOWERS</p>
                 </div>
 
-                <div class="millions-col5">
+                <div class="millions-col5" data-aos="fade-up">
                     <img src="./images/followers.png" alt="images">
                     <h3>1M</h3>
                     <p>FOLLOWERS</p>
@@ -255,7 +255,7 @@
 
             <div class="cta-data">
                 <h3>Call or Whatsapp For All Details</h3>
-                <a href="#">9999999999</a>
+                <a href="#" data-aos="zoom-in">9999999999</a>
             </div>
 
         </div>
@@ -440,7 +440,7 @@
 
             <div class="footer-cta-data">
                 <h3>Call or Whatsapp For All Details</h3>
-                <a href="#">9999999999</a>
+                <a href="#" data-aos="zoom-in">9999999999</a>
             </div>
 
         </div>
@@ -455,6 +455,17 @@
     <!-- footer section end -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        window._be = window._be || {};
+        window.__be.id = "64676962ebfcdc0007969ba9";
+        (function() {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
 
     <script>
         $('.owl-carousel').owlCarousel({
@@ -489,7 +500,13 @@
             });
         });
 
+
+        AOS.init();
+
+
     </script>
+
+
 
 </body>
 
